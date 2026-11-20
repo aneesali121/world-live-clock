@@ -40,6 +40,4 @@ Use IANA zone names such as `Europe/Oslo` or `America/Sao_Paulo`. Full list: htt
 
 Works in current versions of Chrome, Edge, Firefox, Safari, and mobile browsers.
 
-## License
 
-Add a license of your choice before publishing (for example, MIT).
