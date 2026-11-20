@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Live Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>World <span>Live</span> Clock</h1>
+      <p class="sub">Real-time local time for cities worldwide, with daylight saving handled automatically.</p>
+    </div>
+    <div class="ctrls">
+      <div class="seg" id="views">
+        <button data-view="analog">Analog</button>
+        <button data-view="digital">Digital</button>
+        <button data-view="both">Both</button>
+      </div>
+      <button class="btn" id="fmt">12h</button>
+      <button class="btn" id="theme">Auto</button>
+    </div>
+  </header>
+
+  <div class="search">
+    <input id="q" placeholder="Search a country or city, e.g. Toronto or Japan" autocomplete="off" aria-label="Search countries and cities">
+    <div class="res" id="res"></div>
+  </div>
+
+  <main id="grid" class="grid"></main>
+  <div class="empty" id="empty">No clocks yet. Search above to add a city.</div>
+
+  <section class="panel">
+    <div class="ph">
+      <h2>Compare times</h2>
+      <select id="ref" aria-label="Compare against"></select>
+    </div>
+    <div id="cmp"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
